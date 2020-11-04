@@ -13,7 +13,7 @@ RUN apt install -y apt-utils clang curl git libblocksruntime-dev libpython-dev l
 
 # Install S4TF
 WORKDIR /root
-RUN curl https://storage.googleapis.com/swift-tensorflow-artifacts/nightlies/latest/swift-tensorflow-DEVELOPMENT-ubuntu18.04.tar.gz > swift.tar.gz
+RUN curl https://storage.googleapis.com/swift-tensorflow-artifacts/releases/v0.6/rc2/deduped/swift-tensorflow-RELEASE-0.6-ubuntu18.04.tar.gz > swift.tar.gz
 RUN tar -xf swift.tar.gz
 ENV PATH="/root/usr/bin:${PATH}"
 
